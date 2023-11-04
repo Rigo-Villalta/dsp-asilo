@@ -1,0 +1,4 @@
+*.pyc
+*.sqlite3
+activate
+settings_local.py
