@@ -18,3 +18,6 @@ Puede ser desplegada con los requerimientos para esas tecnologías y es completa
 Miriam Janeth Villeda López
 Rodrigo Alexander Miranda Ramirez
 Rigoberto Alcides Villalta
+
+## TRELLO
+https://trello.com/invite/b/gJw9OQoP/ATTI583faa7800efe48e5b77f9b513be306184E91A04/fase-2-reserva-de-citas
