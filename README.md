@@ -19,5 +19,11 @@ Miriam Janeth Villeda López
 Rodrigo Alexander Miranda Ramirez
 Rigoberto Alcides Villalta
 
+## MOCKUPS
+https://udbedu-my.sharepoint.com/:f:/g/personal/mr181415_alumno_udb_edu_sv/EpY7WJqCE7pLgLfPNt6ziZoBMvqdm-E_dutsbEClmq83VQ?e=4f3QEx
+
 ## TRELLO
 https://trello.com/invite/b/gJw9OQoP/ATTI583faa7800efe48e5b77f9b513be306184E91A04/fase-2-reserva-de-citas
+
+## MANUAL TECNICO
+https://udbedu-my.sharepoint.com/:w:/g/personal/vl191443_alumno_udb_edu_sv/EbMDxaZXUi9Asgbxaq5Xh6MBza_KM5jJEuj0_MTl2acZPg?e=ebG2VD
