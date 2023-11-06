@@ -27,3 +27,6 @@ https://trello.com/invite/b/gJw9OQoP/ATTI583faa7800efe48e5b77f9b513be306184E91A0
 
 ## MANUAL TECNICO
 https://udbedu-my.sharepoint.com/:w:/g/personal/vl191443_alumno_udb_edu_sv/EbMDxaZXUi9Asgbxaq5Xh6MBza_KM5jJEuj0_MTl2acZPg?e=ebG2VD
+
+## VIDEO DE EXPLICACIÓN
+https://www.villaltaestudio.com/Videoasilodps/
