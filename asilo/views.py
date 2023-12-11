@@ -1,48 +1,23 @@
-from rest_framework import generics
-from .models import Doctor, Paciente, Cita
-from .serializers import DoctorSerializer, PacienteSerializer, CitaSerializer
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView
 
 
-class DoctorListCreateAPIView(generics.ListCreateAPIView):
-    queryset = Doctor.objects.all()
-    serializer_class = DoctorSerializer
+class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
+    """un token que agrega el tipo de usuario y otros datos importantes"""
+
+    @classmethod
+    def get_token(cls, user):
+        token = super().get_token(user)
+        token["name"] = user.get_full_name()
+        token["username"] = user.username
+        token["email"] = user.email
+        token["is_superuser"] = user.is_superuser
+        token["is_staff"] = user.is_staff
+        token["user_type"] = user.user_type
+
+        return token
 
 
-class DoctorRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Doctor.objects.all()
-    serializer_class = DoctorSerializer
-
-
-class DoctorCreateAPIView(generics.CreateAPIView):
-    queryset = Doctor.objects.all()
-    serializer_class = DoctorSerializer
-
-
-class PacienteListCreateAPIView(generics.ListCreateAPIView):
-    queryset = Paciente.objects.all()
-    serializer_class = PacienteSerializer
-
-
-class PacienteRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Paciente.objects.all()
-    serializer_class = PacienteSerializer
-
-
-class PacienteCreateAPIView(generics.CreateAPIView):
-    queryset = Paciente.objects.all()
-    serializer_class = PacienteSerializer
-
-
-class CitaListCreateAPIView(generics.ListCreateAPIView):
-    queryset = Cita.objects.all()
-    serializer_class = CitaSerializer
-
-
-class CitaRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Cita.objects.all()
-    serializer_class = CitaSerializer
-
-
-class CitaCreateAPIView(generics.CreateAPIView):
-    queryset = Cita.objects.all()
-    serializer_class = CitaSerializer
+class CustomTokenObtainPairView(TokenObtainPairView):
+    # Replace the serializer with your custom
+    serializer_class = CustomTokenObtainPairSerializer
